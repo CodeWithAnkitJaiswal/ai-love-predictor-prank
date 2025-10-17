@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3vw;
+    backdrop-filter: brightness(0.5);
+}
+
+.content {
+    width: 90%;
+    min-width: 280px;
+    max-width: 600px;
+    padding: 50px 30px;
+    background: #72727291;
+    backdrop-filter: blur(4px);
+    border-radius: 25px;
+}
+
+.title {
+    font-family: "Playwrite DE SAS", cursive;
+    text-align: center;
+    margin: 0 50px 50px 50px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    row-gap: 20px;
+}
+.form input {
+    width: 80%;
+    padding: 8px 12px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    color: black;
+    border-radius: 25px;
+}
+
+.meet {
+    width: calc(80% + 24px);
+}
+
+.meet select {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 15px;
+    background: #49494961;
+    border: 1.2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+#convo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: white;
+    padding: 8px 0;
+    border-radius: 25px;
+}
+
+#convo span {
+    font-size: 18px;
+}
+
+.radioBox {
+    display: flex;
+    gap: 15px;
+}
+
+.radioBox label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+    font-size: 18px;
+}
+
+button {
+    width: 50%;
+    align-self: center;
+    padding: 8px 12px;
+    min-width: 100px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: none;
+    outline: navy;
+    border-radius: 20px;
+    background: #ff0041;
+    color: white;
+    cursor: pointer;
+}
+
+/* 
+
+
+*/
+
+/* Loading screen styles */
+.loader {
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+}
+
+.progress-box {
+    width: 80%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 25px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #ff0041, #ff7597);
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+#status {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Final result */
+.result {
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
+
+.prediction {
+    font-size: 28px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease;
+}
+
+.punchline {
+    font-size: 40px;
+    color: #ff0041;
+    animation: bounceIn 1.5s ease infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.08);
+    }
+}
+
+/* 
+
+
+
+ */
+
+.resultBox {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
