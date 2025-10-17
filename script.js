@@ -90,17 +90,18 @@ button.addEventListener("click", () => {
             const randomRoast =
                 roasts[Math.floor(Math.random() * roasts.length)];
             processBox.innerHTML = `
-                <div style="
-                    background: rgba(255,255,255,0.1);
-                    backdrop-filter: blur(4px);
-                    padding: 30px;
-                    border-radius: 20px;
-                    margin-top: 30px;
-                    box-shadow: 0 0 10px rgba(255, 0, 65, 0.4);
-                    ">
+                <div class="reslt">
                     <h2 style="color:#ff0041; font-size:32px;">Chal ja padh le 😂</h2>
                     <p style="margin-top:15px; font-size:20px;">${randomRoast}</p>
                     <p style="margin-top:15px; font-size:16px; color:#ffb6c1;">AI Verdict for "${name}" completed ✅</p>
+                    <p style="
+                            margin-top:25px;
+                            font-size:13px;
+                            color:#d3d3d3;
+                            font-style:italic;
+                            ">
+                            ⚠️ This result is AI-generated and just for fun — don’t take it seriously 😄
+                    </p>
                     <button id="againBtn" style="
                         margin-top:20px;
                         padding:8px 16px;
@@ -111,6 +112,7 @@ button.addEventListener("click", () => {
                         font-size:18px;
                         cursor:pointer;
                     ">Check Again</button>
+                    
                 </div>
             `;
 

@@ -19,7 +19,7 @@ body {
 
 .content {
     width: 90%;
-    min-width: 280px;
+    min-width: 260px;
     max-width: 600px;
     padding: 50px 30px;
     background: #72727291;
@@ -193,6 +193,15 @@ button {
 
  */
 
+.reslt {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(255, 0, 65, 0.4);
+}
+
 .resultBox {
     animation: fadeIn 0.5s ease;
 }
@@ -205,5 +214,21 @@ button {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title {
+        margin: 0 20px 20px 20px;
+        font-size: 28px;
+    }
+    .content {
+        padding: 50px 15px;
+    }
+    .reslt {
+        padding: 15px;
+    }
+    #againBtn {
+        width: 80% !important;
     }
 }
