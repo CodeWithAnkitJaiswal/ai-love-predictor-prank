@@ -22,3 +22,10 @@ Built purely for entertainment and fun.
 - HTML
 - CSS
 - JavaScript
+
+---
+
+## ⚠️ Disclaimer
+
+This project is made only for fun and entertainment.
+No personal data is stored or shared.
